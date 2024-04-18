@@ -164,7 +164,7 @@ module aes_coprocessor #(
 
   always_comb begin
     xif_result_if.result.id = xif_commit_if.commit.id;
-    xif_result_if.result.data = rs_issued[0];  // TODO = result_data
+    xif_result_if.result.data = result_data;
     xif_result_if.result.rd = rd_id_issued;
     xif_result_if.result.we = 1'b1;
     xif_result_if.result.ecsdata = '0;
