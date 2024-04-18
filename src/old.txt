@@ -1,0 +1,31 @@
+
+  typedef struct packed {
+    logic [X_RFR_WIDTH-1:0] rs1;
+    logic [X_RFR_WIDTH-1:0] rs2;
+    // Format: is_aes32(11), is_aes32dsi(10), is_aes32dsmi(9), is_aes32esi(8), is_aes32esmi(7), bs(6:5), rd_id(4:0)
+    logic [11:0]            decoded_data;
+  } decoded_instr_t;
+
+
+  // decoded_instr_mem[2**X_ID_WIDTH-1:0] is only valid when MSB=0
+  decoded_instr_t [2**X_ID_WIDTH:0] decoded_instr_mem; // TODO: Does large width negatively affect PNR ?
+  logic decoded_instr_mem_we;
+
+  // logic [X_RFR_WIDTH-1:0][2**X_ID_WIDTH] rs1_arr;
+  // logic [X_RFR_WIDTH-1:0][2**X_ID_WIDTH] rs2_arr;
+
+  // logic [           11:0][2**X_ID_WIDTH] decoded_instr_arr;
+  
+  decoded_instr_arr[xif_issue_if.issue_req.id] = {
+    is_aes32, is_aes32dsi, is_aes32dsmi, is_aes32esi, is_aes32esmi, bs, rd_id
+  };
+
+  
+  logic [11:0] decoded_instr = decoded_instr_arr[xif_commit_if.commit.id];
+  logic [X_RFR_WIDTH-1:0] rs1 = rs1_arr[xif_commit_if.commit.id];
+  logic [X_RFR_WIDTH-1:0] rs2 = rs2_arr[xif_commit_if.commit.id];
+
+  rs1_arr[xif_commit_if.commit.id] = 32'd0;
+  rs2_arr[xif_commit_if.commit.id] = 32'd0;
+  decoded_instr_arr[xif_commit_if.commit.id] = 12'd0;
+  

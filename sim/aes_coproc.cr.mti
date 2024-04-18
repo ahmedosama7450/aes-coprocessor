@@ -1,0 +1,565 @@
+D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_csr.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_csr.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_csr
+
+Top level modules:
+	cv32e40x_csr
+
+} {} {}} D:/College/GP/aes-coprocessor/test/memory.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/test/memory.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module memory
+
+Top level modules:
+	memory
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_mpu.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_mpu.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_mpu
+-- Importing package cv32e40x_pkg
+
+Top level modules:
+	cv32e40x_mpu
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_wpt.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_wpt.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_wpt
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_wpt.sv(46): (vlog-13314) Defaulting port 'mpu_resp_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_wpt.sv(52): (vlog-13314) Defaulting port 'core_trans_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	cv32e40x_wpt
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_div.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_div.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_div
+-- Importing package cv32e40x_pkg
+
+Top level modules:
+	cv32e40x_div
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_register_file.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_register_file.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_register_file
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_register_file.sv(40): (vlog-13314) Defaulting port 'raddr_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_register_file.sv(44): (vlog-13314) Defaulting port 'waddr_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_register_file.sv(45): (vlog-13314) Defaulting port 'wdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_register_file.sv(46): (vlog-13314) Defaulting port 'we_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	cv32e40x_register_file
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_ex_stage.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_ex_stage.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_ex_stage
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_ex_stage.sv(44): (vlog-13314) Defaulting port 'id_ex_pipe_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_ex_stage.sv(50): (vlog-13314) Defaulting port 'csr_hz_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_ex_stage.sv(56): (vlog-13314) Defaulting port 'ctrl_fsm_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	cv32e40x_ex_stage
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_core.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_core.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_core
+-- Importing package cv32e40x_pkg
+
+Top level modules:
+	cv32e40x_core
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_decoder.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_decoder.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_decoder
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_decoder.sv(53): (vlog-13314) Defaulting port 'if_id_pipe_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_decoder.sv(89): (vlog-13314) Defaulting port 'rf_raddr_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_decoder.sv(99): (vlog-13314) Defaulting port 'ctrl_fsm_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	cv32e40x_decoder
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_b_decoder.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_b_decoder.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_b_decoder
+-- Importing package cv32e40x_pkg
+
+Top level modules:
+	cv32e40x_b_decoder
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_align_check.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_align_check.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_align_check
+-- Importing package cv32e40x_pkg
+
+Top level modules:
+	cv32e40x_align_check
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alu.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alu.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_alu
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alu.sv(185): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alu.sv(188): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alu.sv(189): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alu.sv(190): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alu.sv(191): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alu.sv(187): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alu.sv(188): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alu.sv(189): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alu.sv(190): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alu.sv(191): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alu.sv(311): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alu.sv(312): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alu.sv(312): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alu.sv(313): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alu.sv(313): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alu.sv(314): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+
+Top level modules:
+	cv32e40x_alu
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_if_c_obi.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_if_c_obi.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling interface cv32e40x_if_c_obi
+-- Importing package cv32e40x_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_load_store_unit.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_load_store_unit.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_load_store_unit
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_load_store_unit.sv(45): (vlog-13314) Defaulting port 'ctrl_fsm_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_load_store_unit.sv(51): (vlog-13314) Defaulting port 'id_ex_pipe_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	cv32e40x_load_store_unit
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_popcnt.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_popcnt.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_popcnt
+
+Top level modules:
+	cv32e40x_popcnt
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_register_file_wrapper.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_register_file_wrapper.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_register_file_wrapper
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_register_file_wrapper.sv(42): (vlog-13314) Defaulting port 'raddr_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_register_file_wrapper.sv(46): (vlog-13314) Defaulting port 'waddr_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_register_file_wrapper.sv(47): (vlog-13314) Defaulting port 'wdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_register_file_wrapper.sv(48): (vlog-13314) Defaulting port 'we_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	cv32e40x_register_file_wrapper
+
+} {} {}} D:/College/GP/aes-coprocessor/test/tb.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/test/tb.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module tb
+
+Top level modules:
+	tb
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alignment_buffer.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alignment_buffer.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_alignment_buffer
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alignment_buffer.sv(34): (vlog-13314) Defaulting port 'ctrl_fsm_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alignment_buffer.sv(37): (vlog-13314) Defaulting port 'priv_lvl_ctrl_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alignment_buffer.sv(56): (vlog-13314) Defaulting port 'resp_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	cv32e40x_alignment_buffer
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_id_stage.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_id_stage.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_id_stage
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_id_stage.sv(51): (vlog-13314) Defaulting port 'if_id_pipe_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_id_stage.sv(57): (vlog-13314) Defaulting port 'ex_wb_pipe_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_id_stage.sv(60): (vlog-13314) Defaulting port 'ctrl_byp_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_id_stage.sv(61): (vlog-13314) Defaulting port 'ctrl_fsm_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_id_stage.sv(63): (vlog-13314) Defaulting port 'mcause_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_id_stage.sv(91): (vlog-13314) Defaulting port 'rf_rdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_id_stage.sv(729): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_id_stage.sv(730): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_id_stage.sv(732): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_id_stage.sv(733): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_id_stage.sv(736): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_id_stage.sv(737): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_id_stage.sv(740): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_id_stage.sv(740): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_id_stage.sv(741): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_id_stage.sv(742): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+
+Top level modules:
+	cv32e40x_id_stage
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_mult.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_mult.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_mult
+-- Importing package cv32e40x_pkg
+
+Top level modules:
+	cv32e40x_mult
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_data_obi_interface.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_data_obi_interface.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_data_obi_interface
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_data_obi_interface.sv(46): (vlog-13314) Defaulting port 'trans_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	cv32e40x_data_obi_interface
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_prefetch_unit.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_prefetch_unit.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_prefetch_unit
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_prefetch_unit.sv(39): (vlog-13314) Defaulting port 'ctrl_fsm_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_prefetch_unit.sv(40): (vlog-13314) Defaulting port 'priv_lvl_ctrl_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_prefetch_unit.sv(59): (vlog-13314) Defaulting port 'resp_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	cv32e40x_prefetch_unit
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller_fsm.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller_fsm.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_controller_fsm
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller_fsm.sv(48): (vlog-13314) Defaulting port 'ctrl_byp_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller_fsm.sv(56): (vlog-13314) Defaulting port 'if_id_pipe_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller_fsm.sv(66): (vlog-13314) Defaulting port 'id_ex_pipe_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller_fsm.sv(71): (vlog-13314) Defaulting port 'ex_wb_pipe_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller_fsm.sv(72): (vlog-13314) Defaulting port 'lsu_err_wb_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller_fsm.sv(99): (vlog-13314) Defaulting port 'dcsr_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller_fsm.sv(100): (vlog-13314) Defaulting port 'mcause_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller_fsm.sv(101): (vlog-13314) Defaulting port 'mintstatus_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	cv32e40x_controller_fsm
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_instr_obi_interface.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_instr_obi_interface.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_instr_obi_interface
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_instr_obi_interface.sv(46): (vlog-13314) Defaulting port 'trans_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	cv32e40x_instr_obi_interface
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_pc_target.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_pc_target.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_pc_target
+-- Importing package cv32e40x_pkg
+
+Top level modules:
+	cv32e40x_pc_target
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_m_decoder.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_m_decoder.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_m_decoder
+-- Importing package cv32e40x_pkg
+
+Top level modules:
+	cv32e40x_m_decoder
+
+} {} {}} D:/College/GP/aes-coprocessor/src/cv32e40x_core_with_aes.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/src/cv32e40x_core_with_aes.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_core_with_aes
+-- Importing package cv32e40x_pkg
+
+Top level modules:
+	cv32e40x_core_with_aes
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_write_buffer.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_write_buffer.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_write_buffer
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_write_buffer.sv(44): (vlog-13314) Defaulting port 'trans_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	cv32e40x_write_buffer
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_controller
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller.sv(56): (vlog-13314) Defaulting port 'if_id_pipe_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller.sv(67): (vlog-13314) Defaulting port 'id_ex_pipe_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller.sv(69): (vlog-13314) Defaulting port 'ex_wb_pipe_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller.sv(82): (vlog-13314) Defaulting port 'lsu_err_wb_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller.sv(104): (vlog-13314) Defaulting port 'mcause_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller.sv(105): (vlog-13314) Defaulting port 'mintstatus_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller.sv(113): (vlog-13314) Defaulting port 'dcsr_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller.sv(121): (vlog-13314) Defaulting port 'csr_hz_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller.sv(124): (vlog-13314) Defaulting port 'rf_raddr_id_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	cv32e40x_controller
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/include/cv32e40x_pkg.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/include/cv32e40x_pkg.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling package cv32e40x_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller_bypass.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller_bypass.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_controller_bypass
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller_bypass.sv(41): (vlog-13314) Defaulting port 'rf_raddr_id_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller_bypass.sv(44): (vlog-13314) Defaulting port 'if_id_pipe_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller_bypass.sv(45): (vlog-13314) Defaulting port 'id_ex_pipe_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller_bypass.sv(46): (vlog-13314) Defaulting port 'ex_wb_pipe_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller_bypass.sv(67): (vlog-13314) Defaulting port 'csr_hz_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller_bypass.sv(284): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_controller_bypass.sv(291): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+
+Top level modules:
+	cv32e40x_controller_bypass
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_cs_registers.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_cs_registers.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_cs_registers
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_cs_registers.sv(78): (vlog-13314) Defaulting port 'id_ex_pipe_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_cs_registers.sv(82): (vlog-13314) Defaulting port 'ex_wb_pipe_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_cs_registers.sv(85): (vlog-13314) Defaulting port 'ctrl_fsm_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_cs_registers.sv(1848): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_cs_registers.sv(1849): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_cs_registers.sv(1851): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_cs_registers.sv(1852): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_cs_registers.sv(1854): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_cs_registers.sv(1855): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_cs_registers.sv(1857): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_cs_registers.sv(1858): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+
+Top level modules:
+	cv32e40x_cs_registers
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_if_xif.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_if_xif.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling interface cv32e40x_if_xif
+
+Top level modules:
+	--none--
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_pma.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_pma.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_pma
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_pma.sv(67): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_pma.sv(71): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_pma.sv(82): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_pma.sv(84): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_pma.sv(84): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_pma.sv(87): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_pma.sv(93): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+
+Top level modules:
+	cv32e40x_pma
+
+} {} {}} D:/College/GP/aes-coprocessor/test/tb_wrapper.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/test/tb_wrapper.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module tb_wrapper
+
+Top level modules:
+	tb_wrapper
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_lsu_response_filter.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_lsu_response_filter.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_lsu_response_filter
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_lsu_response_filter.sv(43): (vlog-13314) Defaulting port 'trans_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_lsu_response_filter.sv(47): (vlog-13314) Defaulting port 'resp_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	cv32e40x_lsu_response_filter
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_if_stage.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_if_stage.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_if_stage
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_if_stage.sv(64): (vlog-13314) Defaulting port 'ctrl_fsm_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_if_stage.sv(85): (vlog-13314) Defaulting port 'priv_lvl_ctrl_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	cv32e40x_if_stage
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_debug_triggers
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(72): (vlog-13314) Defaulting port 'ctrl_fsm_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(156): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(157): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(159): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(164): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(185): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(213): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(215): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(232): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(235): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(244): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(245): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(246): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(256): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(257): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(265): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(268): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(272): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(277): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(278): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(280): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(280): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(282): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(287): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(287): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(289): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(342): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(342): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(344): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(346): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(377): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(378): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(378): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(379): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(445): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(446): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(449): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(449): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(451): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(452): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(460): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(461): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(463): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(464): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(468): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(468): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(470): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(472): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(479): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(479): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(481): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_debug_triggers.sv(482): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+
+Top level modules:
+	cv32e40x_debug_triggers
+
+} {} {}} D:/College/GP/aes-coprocessor/test/tb_aes.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/test/tb_aes.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module tb_aes
+
+Top level modules:
+	tb_aes
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/bhv/cv32e40x_sim_clock_gate.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/bhv/cv32e40x_sim_clock_gate.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_clock_gate
+
+Top level modules:
+	cv32e40x_clock_gate
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alu_b_cpop.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alu_b_cpop.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_alu_b_cpop
+
+Top level modules:
+	cv32e40x_alu_b_cpop
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_wb_stage.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_wb_stage.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_wb_stage
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_wb_stage.sv(46): (vlog-13314) Defaulting port 'ex_wb_pipe_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_wb_stage.sv(49): (vlog-13314) Defaulting port 'ctrl_fsm_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	cv32e40x_wb_stage
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_a_decoder.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_a_decoder.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_a_decoder
+-- Importing package cv32e40x_pkg
+
+Top level modules:
+	cv32e40x_a_decoder
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_int_controller.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_int_controller.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_int_controller
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_int_controller.sv(39): (vlog-13314) Defaulting port 'mstatus_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	cv32e40x_int_controller
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_clic_int_controller.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_clic_int_controller.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_clic_int_controller
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_clic_int_controller.sv(53): (vlog-13314) Defaulting port 'mstatus_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_clic_int_controller.sv(55): (vlog-13314) Defaulting port 'mintstatus_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_clic_int_controller.sv(56): (vlog-13314) Defaulting port 'mcause_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	cv32e40x_clic_int_controller
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_prefetcher.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_prefetcher.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_prefetcher
+-- Importing package cv32e40x_pkg
+
+Top level modules:
+	cv32e40x_prefetcher
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_sleep_unit.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_sleep_unit.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_sleep_unit
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_sleep_unit.sv(65): (vlog-13314) Defaulting port 'ctrl_fsm_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	cv32e40x_sleep_unit
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_compressed_decoder.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_compressed_decoder.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_compressed_decoder
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_compressed_decoder.sv(34): (vlog-13314) Defaulting port 'instr_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	cv32e40x_compressed_decoder
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_sequencer.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_sequencer.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_sequencer
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_sequencer.sv(43): (vlog-13314) Defaulting port 'instr_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	cv32e40x_sequencer
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_ff_one.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_ff_one.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_ff_one
+
+Top level modules:
+	cv32e40x_ff_one
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_i_decoder.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_i_decoder.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_i_decoder
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_i_decoder.sv(38): (vlog-13314) Defaulting port 'ctrl_fsm_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	cv32e40x_i_decoder
+
+} {} {}}
