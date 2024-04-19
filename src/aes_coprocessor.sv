@@ -66,13 +66,30 @@ module aes_coprocessor #(
   end
 
   // Pipeline control signals
-  logic pipeline_en;
+  logic result_stage_available_q, result_stage_available_d;
   logic is_first_instr;
   logic is_first_instr_previous;
   logic actual_issue_ready;
 
-  assign pipeline_en = is_first_instr | (xif_result_if.result_valid & xif_result_if.result_ready);
+  always_ff @(posedge clk_i, negedge rst_ni) begin
+    if (~rst_ni) begin
+      result_stage_available_q <= 1'b1;
+    end else begin
+      result_stage_available_q <= result_stage_available_d;
+    end
+  end
 
+  always_comb begin
+    result_stage_available_d = result_stage_available_q;
+
+    if(actual_issue_ready) begin
+      result_stage_available_d = 1'b0;
+    end else if(is_first_instr | (xif_result_if.result_valid & xif_result_if.result_ready)) begin
+      result_stage_available_d = 1'b1;
+    end
+  end
+
+  // TODO refactor and separate the next state logic
   always_ff @(posedge clk_i, negedge rst_ni) begin
     if (~rst_ni) begin
       is_first_instr <= 1'b1;
@@ -92,7 +109,7 @@ module aes_coprocessor #(
 
     if (xif_issue_if.issue_valid &
         xif_issue_if.issue_req.rs_valid[0] & xif_issue_if.issue_req.rs_valid[1]) begin
-      xif_issue_if.issue_ready = pipeline_en;
+      xif_issue_if.issue_ready = result_stage_available_q;
       actual_issue_ready = 1'b1;
     end
   end
@@ -123,7 +140,7 @@ module aes_coprocessor #(
 
       id_issued <= '0;
       rs_issued <= '{'0, '0};
-    end else if (pipeline_en) begin
+    end else if (result_stage_available_q) begin
       rd_id_issued <= rd_id;
       bs_issued <= bs;
 
@@ -139,7 +156,7 @@ module aes_coprocessor #(
   end
 
   // =======================================================================
-  // Commit interface trnsaction
+  // Commit interface transaction
   // =======================================================================
   // TODO Do we need to flush succeeding instructions in pipeline ??? is there any ?
 
@@ -192,21 +209,6 @@ module aes_coprocessor #(
     xif_result_if.result.err = 1'b0;
     xif_result_if.result.dbg = 1'b0;
   end
-
-  /*
-  riscv_crypto_fu_saes32 aes32_inst (
-      .valid(1'b1),
-      .rs1(rs_issued[0]),
-      .rs2(rs_issued[1]),
-      .bs(bs_issued),
-      .op_saes32_encs(is_aes32esi_issued),
-      .op_saes32_encsm(is_aes32esmi_issued),
-      .op_saes32_decs(is_aes32dsi_issued),
-      .op_saes32_decsm(is_aes32dsmi_issued),
-      .rd(result_data),
-      .ready()
-  );
-  */
 
   aes32dsi aes32dsi_inst (
       .bs (bs_issued),
