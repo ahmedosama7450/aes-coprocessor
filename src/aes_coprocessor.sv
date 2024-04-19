@@ -70,6 +70,16 @@ module aes_coprocessor #(
   logic is_first_instr;
   logic is_first_instr_previous;
   logic actual_issue_ready;
+  logic delay_issue_ready;
+  logic result_hs;
+
+  assign result_hs = xif_result_if.result_valid & xif_result_if.result_ready;
+
+  always_comb begin
+    delay_issue_ready = 1'b0;
+    if (result_hs) delay_issue_ready = 1'b1;
+    else if (actual_issue_ready) delay_issue_ready = 1'b0;
+  end
 
   always_ff @(posedge clk_i, negedge rst_ni) begin
     if (~rst_ni) begin
@@ -82,9 +92,9 @@ module aes_coprocessor #(
   always_comb begin
     result_stage_available_d = result_stage_available_q;
 
-    if(actual_issue_ready) begin
+    if (actual_issue_ready && ~delay_issue_ready) begin
       result_stage_available_d = 1'b0;
-    end else if(is_first_instr | (xif_result_if.result_valid & xif_result_if.result_ready)) begin
+    end else if (is_first_instr | result_hs) begin
       result_stage_available_d = 1'b1;
     end
   end
