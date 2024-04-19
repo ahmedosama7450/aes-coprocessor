@@ -48,7 +48,7 @@ module memory #(
     end
     */
 
-    $readmemb(FIRMWARE_FILE, instr_mem);
+    $readmemh(FIRMWARE_FILE, instr_mem);
   end
 
   always @(posedge clk_i, negedge rst_ni) begin
