@@ -141,17 +141,35 @@ module aes_coprocessor #(
   // =======================================================================
   // Commit interface trnsaction
   // =======================================================================
+  // TODO Do we need to flush succeeding instructions in pipeline ??? is there any ?
 
+  logic result_valid;
+
+  always_ff @(posedge clk_i, negedge rst_ni) begin
+    if (~rst_ni) begin
+      result_valid <= 1'b0;
+    end else if (result_valid) begin
+      if (xif_result_if.result_ready) begin
+        result_valid <= 1'b0;
+      end
+    end else if (instr_accepted_issued & xif_commit_if.commit_valid & ~xif_commit_if.commit.commit_kill) begin
+      // TODO Do we need to check `instr_accepted_issued` ?
+      // I think `xif_commit_if.commit.commit_kill` will be 1 for unaccepted instructions, but it's not mentioned in the spec
+      result_valid <= 1'b1;
+    end
+  end
+
+  assign xif_result_if.result_valid = result_valid;
+
+  /*
   always_comb begin
-    // TODO Do we need to flush succeeding instructions in pipeline ??? is there any ?
     xif_result_if.result_valid = 1'b0;
 
-    /* TODO Do we need to check `instr_accepted_issued` ?
-        I think `xif_commit_if.commit.commit_kill` will be 1 for unaccepted instructions, but it's not mentioned in the spec */
     if (instr_accepted_issued & xif_commit_if.commit_valid & ~xif_commit_if.commit.commit_kill) begin
       xif_result_if.result_valid = 1'b1;
     end
   end
+  */
 
   // =======================================================================
   // Result interface transaction
@@ -174,6 +192,21 @@ module aes_coprocessor #(
     xif_result_if.result.err = 1'b0;
     xif_result_if.result.dbg = 1'b0;
   end
+
+  /*
+  riscv_crypto_fu_saes32 aes32_inst (
+      .valid(1'b1),
+      .rs1(rs_issued[0]),
+      .rs2(rs_issued[1]),
+      .bs(bs_issued),
+      .op_saes32_encs(is_aes32esi_issued),
+      .op_saes32_encsm(is_aes32esmi_issued),
+      .op_saes32_decs(is_aes32dsi_issued),
+      .op_saes32_decsm(is_aes32dsmi_issued),
+      .rd(result_data),
+      .ready()
+  );
+  */
 
   aes32dsi aes32dsi_inst (
       .bs (bs_issued),
