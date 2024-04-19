@@ -123,13 +123,13 @@ module cv32e40x_core_with_aes
   localparam logic [1:0] X_ECS_XS = 2'b00;
 
   cv32e40x_if_xif #(
-      .X_NUM_RS     (X_NUM_RS),
-      .X_ID_WIDTH   (X_ID_WIDTH),
-      .X_MEM_WIDTH  (X_MEM_WIDTH),
-      .X_RFR_WIDTH  (X_RFR_WIDTH),
-      .X_RFW_WIDTH  (X_RFW_WIDTH),
-      .X_MISA       (X_MISA),
-      .X_ECS_XS     (X_ECS_XS)
+      .X_NUM_RS   (X_NUM_RS),
+      .X_ID_WIDTH (X_ID_WIDTH),
+      .X_MEM_WIDTH(X_MEM_WIDTH),
+      .X_RFR_WIDTH(X_RFR_WIDTH),
+      .X_RFW_WIDTH(X_RFW_WIDTH),
+      .X_MISA     (X_MISA),
+      .X_ECS_XS   (X_ECS_XS)
   ) xif ();
 
   /*
@@ -141,20 +141,22 @@ module cv32e40x_core_with_aes
   cv32e40x_if_xif xif_result_if ();
   */
 
+  /*
   initial begin
     $monitor("issue_valid = %0b", xif.issue_valid);
   end
+  */
 
   if (WITH_AES) begin : gen_aes_coprocessor
     aes_coprocessor #(
         // .X_EXT      (X_EXT),
-        .X_NUM_RS     (X_NUM_RS),
-        .X_ID_WIDTH   (X_ID_WIDTH),
-        .X_MEM_WIDTH  (X_MEM_WIDTH),
-        .X_RFR_WIDTH  (X_RFR_WIDTH),
-        .X_RFW_WIDTH  (X_RFW_WIDTH),
-        .X_MISA       (X_MISA),
-        .X_ECS_XS     (X_ECS_XS)
+        .X_NUM_RS   (X_NUM_RS),
+        .X_ID_WIDTH (X_ID_WIDTH),
+        .X_MEM_WIDTH(X_MEM_WIDTH),
+        .X_RFR_WIDTH(X_RFR_WIDTH),
+        .X_RFW_WIDTH(X_RFW_WIDTH),
+        .X_MISA     (X_MISA),
+        .X_ECS_XS   (X_ECS_XS)
     ) aes_coproc (
         .*,
         .xif_compressed_if(xif),
