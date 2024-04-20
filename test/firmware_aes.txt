@@ -1,9 +1,225 @@
-000000000011_00000_000_00001_0010011        // addi x1, x0, 3
-000000000110_00000_000_00010_0010011        // addi x2, x0, 6
-00_10011_00010_00001_000_00011_0110011      // aes32esmi x3, x1, x2
-00000000000000000000000000110011            // nop
-00000000000000000000000000110011            // nop
-0000000_00011_00000_010_00000_0100011       // sw x3, 0(x0)
-00000000000000000000000000110011            // nop  
-00000000000000000000000000110011            // nop
-0001000_00101_00000_000_00000_1110011       // wfi
+0x00100e13  //addi x28 x0 1	addi t3, zero, 1
+0x018e1e13  //slli x28 x28 24	slli t3,t3,24
+0x01c02023  //sw x28 0(x0)	sw t3, 0(zero)
+0x00200e13  //addi x28 x0 2	addi t3, zero, 2
+0x018e1e13  //slli x28 x28 24	slli t3,t3,24
+0x01c02223  //sw x28 4(x0)	sw t3, 4(zero)
+0x00400e13  //addi x28 x0 4	addi t3, zero, 4
+0x018e1e13  //slli x28 x28 24	slli t3,t3,24
+0x01c02423  //sw x28 8(x0)	sw t3, 8(zero)
+0x00800e13  //addi x28 x0 8	addi t3, zero, 8
+0x018e1e13  //slli x28 x28 24	slli t3,t3,24
+0x01c02623  //sw x28 12(x0)	sw t3, 12(zero)
+0x01000e13  //addi x28 x0 16	addi t3, zero, 16
+0x018e1e13  //slli x28 x28 24	slli t3,t3,24
+0x01c02823  //sw x28 16(x0)	sw t3, 16(zero)
+0x02000e13  //addi x28 x0 32	addi t3, zero, 32
+0x018e1e13  //slli x28 x28 24	slli t3,t3,24
+0x01c02a23  //sw x28 20(x0)	sw t3, 20(zero)
+0x04000e13  //addi x28 x0 64	addi t3, zero, 64
+0x018e1e13  //slli x28 x28 24	slli t3,t3,24
+0x01c02c23  //sw x28 24(x0)	sw t3, 24(zero)
+0x08000e13  //addi x28 x0 128	addi t3, zero, 128
+0x018e1e13  //slli x28 x28 24	slli t3,t3,24
+0x01c02e23  //sw x28 28(x0)	sw t3, 28(zero)
+0x01b00e13  //addi x28 x0 27	addi t3, zero, 27
+0x018e1e13  //slli x28 x28 24	slli t3,t3,24
+0x03c02023  //sw x28 32(x0)	sw t3, 32(zero)
+0x03600e13  //addi x28 x0 54	addi t3, zero, 54
+0x018e1e13  //slli x28 x28 24	slli t3,t3,24
+0x03c02223  //sw x28 36(x0)	sw t3, 36(zero)
+0x02800513  //addi x10 x0 40	addi a0, zero, 40
+0x00010637  //lui x12 16	lui a2,16
+0x20360613  //addi x12 x12 515	addi a2,a2,515
+0x040506b7  //lui x13 16464	lui a3,16464
+0x60768693  //addi x13 x13 1543	addi a3,a3,1543
+0x08090737  //lui x14 32912	lui a4,32912
+0x50570713  //addi x14 x14 1285	addi a4,a4,1285
+0x50670713  //addi x14 x14 1286	addi a4,a4,1286
+0x0c0d07b7  //lui x15 49360	lui a5,49360
+0x70778793  //addi x15 x15 1799	addi a5,a5,1799
+0x70878793  //addi x15 x15 1800	addi a5,a5,1800
+0x0a050293  //addi x5 x10 160	addi t0,a0,160
+0x00000313  //addi x6 x0 0	addi t1,zero,0
+0x00c52023  //sw x12 0(x10)	sw a2, 0(a0)
+0x00d52223  //sw x13 4(x10)	sw a3, 4(a0)
+0x00e52423  //sw x14 8(x10)	sw a4, 8(a0)
+0x00f52623  //sw x15 12(x10)	sw a5, 12(a0)
+0x04a28063  //beq x5 x10 64	beq t0, a0, .finish1
+0x01050513  //addi x10 x10 16	addi a0, a0, 16
+0x00032383  //lw x7 0(x6)	lw t2, 0(t1)
+0x00430313  //addi x6 x6 4	addi t1, t1, 4
+0x00879e93  //slli x29 x15 8	slli t4, a5 ,8
+0x0187df13  //srli x30 x15 24	srli t5, a5 ,24
+0x01eeee33  //or x28 x29 x30	or t3,t4,t5
+0x23c383b3	  //aes32esi t2, t2,t3,0
+0x63c383b3	  //aes32esi t2, t2,t3,1
+0xa3c383b3	  //aes32esi t2, t2,t3,2
+0xe3c383b3	  //aes32esi t2, t2,t3,3
+0x00764633  //xor x12 x12 x7	xor a2,a2,t2
+0x00c6c6b3  //xor x13 x13 x12	xor a3,a3,a2
+0x00d74733  //xor x14 x14 x13	xor a4,a4,a3
+0x00e7c7b3  //xor x15 x15 x14	xor a5,a5,a4
+0xfb5ff06f  //jal x0 -76	j .loop1
+0x02800593  //addi x11 x0 40	addi a1, zero, 40
+0x01050513  //addi x10 x10 16	addi a0, a0, 16
+0x0a050293  //addi x5 x10 160	addi t0,a0,160
+0x0005a603  //lw x12 0(x11)	lw a2, 0(a1)
+0x0045a683  //lw x13 4(x11)	lw a3, 4(a1)
+0x0085a703  //lw x14 8(x11)	lw a4, 8(a1)
+0x00c5a783  //lw x15 12(x11)	lw a5, 12(a1)
+0x00c52023  //sw x12 0(x10)	sw a2, 0(a0)
+0x00d52223  //sw x13 4(x10)	sw a3, 4(a0)
+0x00e52423  //sw x14 8(x10)	sw a4, 8(a0)
+0x00f52623  //sw x15 12(x10)	sw a5, 12(a0)
+0x01050513  //addi x10 x10 16	addi a0, a0, 16
+0x01058593  //addi x11 x11 16	addi a1, a1, 16
+0x0005a603  //lw x12 0(x11)	lw a2, 0(a1)
+0x00000e93  //addi x29 x0 0	addi t4,zero,0
+0x22ce8eb3    //aes32esi t4, t4,a2,0
+0x62ce8eb3    //aes32esi t4, t4,a2,1
+0xa2ce8eb3    //aes32esi t4, t4,a2,2
+0xe2ce8eb3    //aes32esi t4, t4,a2,3
+0x00000f13  //addi x30 x0 0	addi t5,zero,0
+0x2fdf0f33    //aes32dsmi t5, t5,t4,0
+0x6fdf0f33    //aes32dsmi t5, t5,t4,1
+0xafdf0f33    //aes32dsmi t5, t5,t4,2
+0xefdf0f33    //aes32dsmi t5, t5,t4,3
+0x01e52023  //sw x30 0(x10)	sw t5, 0(a0)
+0x00450513  //addi x10 x10 4	addi a0, a0, 4
+0x00458593  //addi x11 x11 4	addi a1, a1, 4
+0xfca294e3  //bne x5 x10 -56	bne t0, a0, .loop2
+0x0005a603  //lw x12 0(x11)	lw a2, 0(a1)
+0x0045a683  //lw x13 4(x11)	lw a3, 4(a1)
+0x0085a703  //lw x14 8(x11)	lw a4, 8(a1)
+0x00c5a783  //lw x15 12(x11)	lw a5, 12(a1)
+0x00c52023  //sw x12 0(x10)	sw a2, 0(a0)
+0x00d52223  //sw x13 4(x10)	sw a3, 4(a0)
+0x00e52423  //sw x14 8(x10)	sw a4, 8(a0)
+0x00f52623  //sw x15 12(x10)	sw a5, 12(a0)
+0x02800593  //addi x11 x0 40	addi a1,zero,40
+0x1b800313  //addi x6 x0 440	addi t1,zero,440
+0x0005a603  //lw x12 0(x11)	lw a2, 0(a1)
+0x0045a683  //lw x13 4(x11)	lw a3, 4(a1)
+0x0085a703  //lw x14 8(x11)	lw a4, 8(a1)
+0x00c5a783  //lw x15 12(x11)	lw a5, 12(a1)
+0x00032383  //lw x7 0(x6)	lw t2, 0(t1)
+0x00432e03  //lw x28 4(x6)	lw t3, 4(t1)
+0x00832e83  //lw x29 8(x6)	lw t4, 8(t1)
+0x00c32f03  //lw x30 12(x6)	lw t5, 12(t1)
+0x007643b3  //xor x7 x12 x7	xor t2,a2,t2
+0x01c6ce33  //xor x28 x13 x28	xor t3,a3,t3
+0x01d74eb3  //xor x29 x14 x29	xor t4,a4,t4
+0x01e7cf33  //xor x30 x15 x30	xor t5,a5,t5
+0x0a058293  //addi x5 x11 160	addi t0,a1,160
+0x01058593  //addi x11 x11 16	addi a1,a1,16
+0x0005a603  //lw x12 0(x11)	lw a2, 0(a1)
+0x0045a683  //lw x13 4(x11)	lw a3, 4(a1)
+0x0085a703  //lw x14 8(x11)	lw a4, 8(a1)
+0x00c5a783  //lw x15 12(x11)	lw a5, 12(a1)
+0x26760633  //aes32esmi a2,a2,t2,0
+0x67c60633  //aes32esmi a2,a2,t3,1
+0xa7d60633  //aes32esmi a2,a2,t4,2
+0xe7e60633  //aes32esmi a2,a2,t5,3
+0x27c686b3  //aes32esmi a3,a3,t3,0
+0x67d686b3  //aes32esmi a3,a3,t4,1
+0xa7e686b3  //aes32esmi a3,a3,t5,2
+0xe67686b3  //aes32esmi a3,a3,t2,3
+0x27d70733  //aes32esmi a4,a4,t4,0
+0x67e70733  //aes32esmi a4,a4,t5,1
+0xa6770733  //aes32esmi a4,a4,t2,2
+0xe7c70733  //aes32esmi a4,a4,t3,3
+0x27e787b3  //aes32esmi a5,a5,t5,0
+0x667787b3  //aes32esmi a5,a5,t2,1
+0xa7c787b3  //aes32esmi a5,a5,t3,2
+0xe7d787b3  //aes32esmi a5,a5,t4,3
+0x00060393  //addi x7 x12 0	mv t2 ,a2
+0x00068e13  //addi x28 x13 0	mv t3 ,a3
+0x00070e93  //addi x29 x14 0	mv t4 ,a4
+0x00078f13  //addi x30 x15 0	mv t5 ,a5
+0x01058593  //addi x11 x11 16	addi a1, a1, 16
+0xf8b29ee3  //bne x5 x11 -100	bne t0, a1, .loop3
+0x0005a603  //lw x12 0(x11)	lw a2, 0(a1)
+0x0045a683  //lw x13 4(x11)	lw a3, 4(a1)
+0x0085a703  //lw x14 8(x11)	lw a4, 8(a1)
+0x00c5a783  //lw x15 12(x11)	lw a5, 12(a1)
+0x22760633  //aes32esi a2,a2,t2,0
+0x63c60633  //aes32esi a2,a2,t3,1
+0xa3d60633  //aes32esi a2,a2,t4,2
+0xe3e60633  //aes32esi a2,a2,t5,3
+0x23c686b3  //aes32esi a3,a3,t3,0
+0x63d686b3  //aes32esi a3,a3,t4,1
+0xa3e686b3  //aes32esi a3,a3,t5,2
+0xe27686b3  //aes32esi a3,a3,t2,3
+0x23d70733  //aes32esi a4,a4,t4,0
+0x63e70733  //aes32esi a4,a4,t5,1
+0xa2770733  //aes32esi a4,a4,t2,2
+0xe3c70733  //aes32esi a4,a4,t3,3
+0x23e787b3  //aes32esi a5,a5,t5,0
+0x627787b3  //aes32esi a5,a5,t2,1
+0xa3c787b3  //aes32esi a5,a5,t3,2
+0xe3d787b3  //aes32esi a5,a5,t4,3
+0x00060393  //addi x7 x12 0	mv t2 ,a2
+0x00068e13  //addi x28 x13 0	mv t3 ,a3
+0x00070e93  //addi x29 x14 0	mv t4 ,a4
+0x00078f13  //addi x30 x15 0	mv t5 ,a5
+0x00c52823  //sw x12 16(x10)	sw a2, 16(a0)
+0x00d52a23  //sw x13 20(x10)	sw a3, 20(a0)
+0x00e52c23  //sw x14 24(x10)	sw a4, 24(a0)
+0x00f52e23  //sw x15 28(x10)	sw a5, 28(a0)
+0x00052603  //lw x12 0(x10)	lw a2, 0(a0)
+0x00452683  //lw x13 4(x10)	lw a3, 4(a0)
+0x00852703  //lw x14 8(x10)	lw a4, 8(a0)
+0x00c52783  //lw x15 12(x10)	lw a5, 12(a0)
+0x007643b3  //xor x7 x12 x7	xor t2,a2,t2
+0x01c6ce33  //xor x28 x13 x28	xor t3,a3,t3
+0x01d74eb3  //xor x29 x14 x29	xor t4,a4,t4
+0x01e7cf33  //xor x30 x15 x30	xor t5,a5,t5
+0xf6050293  //addi x5 x10 -160	addi t0,a0,-160
+0xff050513  //addi x10 x10 -16	addi a0,a0,-16
+0x00052603  //lw x12 0(x10)	lw a2, 0(a0)
+0x00452683  //lw x13 4(x10)	lw a3, 4(a0)
+0x00852703  //lw x14 8(x10)	lw a4, 8(a0)
+0x00c52783  //lw x15 12(x10)	lw a5, 12(a0)
+0x2e760633  //aes32dsmi a2,a2,t2,0
+0x6fe60633  //aes32dsmi a2,a2,t5,1
+0xafd60633  //aes32dsmi a2,a2,t4,2
+0xefc60633  //aes32dsmi a2,a2,t3,3
+0x2fc686b3  //aes32dsmi a3,a3,t3,0
+0x6e7686b3  //aes32dsmi a3,a3,t2,1
+0xafe686b3  //aes32dsmi a3,a3,t5,2
+0xefd686b3  //aes32dsmi a3,a3,t4,3
+0x2fd70733  //aes32dsmi a4,a4,t4,0
+0x6fc70733  //aes32dsmi a4,a4,t3,1
+0xae770733  //aes32dsmi a4,a4,t2,2
+0xefe70733  //aes32dsmi a4,a4,t5,3
+0x2fe787b3  //aes32dsmi a5,a5,t5,0
+0x6fd787b3  //aes32dsmi a5,a5,t4,1
+0xafc787b3  //aes32dsmi a5,a5,t3,2
+0xee7787b3  //aes32dsmi a5,a5,t2,3
+0x00060393  //addi x7 x12 0	mv t2 ,a2
+0x00068e13  //addi x28 x13 0	mv t3 ,a3
+0x00070e93  //addi x29 x14 0	mv t4 ,a4
+0x00078f13  //addi x30 x15 0	mv t5 ,a5
+0xff050513  //addi x10 x10 -16	addi a0, a0, -16
+0xf8a29ee3  //bne x5 x10 -100	bne t0, a0, .loop4
+0x00052603  //lw x12 0(x10)	lw a2, 0(a0)
+0x00452683  //lw x13 4(x10)	lw a3, 4(a0)
+0x00852703  //lw x14 8(x10)	lw a4, 8(a0)
+0x00c52783  //lw x15 12(x10)	lw a5, 12(a0)
+0x2a760633  //aes32dsi a2,a2,t2,0
+0x6be60633  //aes32dsi a2,a2,t5,1
+0xabd60633  //aes32dsi a2,a2,t4,2
+0xebc60633  //aes32dsi a2,a2,t3,3
+0x2bc686b3  //aes32dsi a3,a3,t3,0
+0x6a7686b3  //aes32dsi a3,a3,t2,1
+0xabe686b3  //aes32dsi a3,a3,t5,2
+0xebd686b3  //aes32dsi a3,a3,t4,3
+0x2bd70733  //aes32dsi a4,a4,t4,0
+0x6bc70733  //aes32dsi a4,a4,t3,1
+0xaa770733  //aes32dsi a4,a4,t2,2
+0xebe70733  //aes32dsi a4,a4,t5,3
+0x2be787b3  //aes32dsi a5,a5,t5,0
+0x6bd787b3  //aes32dsi a5,a5,t4,1
+0xabc787b3  //aes32dsi a5,a5,t3,2
+0xea7787b3  //aes32dsi a5,a5,t2,3
