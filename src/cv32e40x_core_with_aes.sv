@@ -132,21 +132,6 @@ module cv32e40x_core_with_aes
       .X_ECS_XS   (X_ECS_XS)
   ) xif ();
 
-  /*
-  cv32e40x_if_xif xif_compressed_if ();
-  cv32e40x_if_xif xif_issue_if ();
-  cv32e40x_if_xif xif_commit_if ();
-  cv32e40x_if_xif xif_mem_if ();
-  cv32e40x_if_xif xif_mem_result_if ();
-  cv32e40x_if_xif xif_result_if ();
-  */
-
-  /*
-  initial begin
-    $monitor("issue_valid = %0b", xif.issue_valid);
-  end
-  */
-
   if (WITH_AES) begin : gen_aes_coprocessor
     aes_coprocessor #(
         // .X_EXT      (X_EXT),
