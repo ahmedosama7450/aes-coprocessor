@@ -62,3 +62,5 @@ In this stage, the coprocessor waits until the core sends [the commit interface]
 
 ![image](https://github.com/ahmedosama7450/aes-coprocessor/assets/76496317/31f57587-6a53-4505-ac0a-6db288f797f6)
 
+# License
+MIT
