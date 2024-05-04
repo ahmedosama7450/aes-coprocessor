@@ -2,6 +2,12 @@ onerror {resume}
 quietly WaveActivateNextPane {} 0
 add wave -noupdate /tb_aes/tb/clk
 add wave -noupdate /tb_aes/tb/rst_n
+add wave -noupdate /tb_aes/tb/dut/gen_aes_coprocessor/aes_coproc/actual_issue_ready
+add wave -noupdate /tb_aes/tb/dut/gen_aes_coprocessor/aes_coproc/is_first_instr_previous
+add wave -noupdate /tb_aes/tb/dut/gen_aes_coprocessor/aes_coproc/is_first_instr
+add wave -noupdate /tb_aes/tb/dut/gen_aes_coprocessor/aes_coproc/result_stage_available_d
+add wave -noupdate /tb_aes/tb/dut/gen_aes_coprocessor/aes_coproc/result_stage_available_q
+add wave -noupdate /tb_aes/tb/dut/gen_aes_coprocessor/aes_coproc/result_valid
 add wave -noupdate /tb_aes/tb/dut/xif/compressed_valid
 add wave -noupdate /tb_aes/tb/dut/xif/compressed_ready
 add wave -noupdate /tb_aes/tb/dut/xif/compressed_req
@@ -22,14 +28,14 @@ add wave -noupdate /tb_aes/tb/dut/xif/result_valid
 add wave -noupdate /tb_aes/tb/dut/xif/result_ready
 add wave -noupdate -expand /tb_aes/tb/dut/xif/result
 add wave -noupdate /tb_aes/tb/mem/data_mem
-add wave -noupdate /tb_aes/tb/dut/core/register_file_wrapper_i/register_file_i/mem
+add wave -noupdate -expand /tb_aes/tb/dut/core/register_file_wrapper_i/register_file_i/mem
 add wave -noupdate /tb_aes/tb/dut/core/cs_registers_i/mcause_alias_we
 add wave -noupdate /tb_aes/tb/dut/core/cs_registers_i/mcause_n
 add wave -noupdate /tb_aes/tb/dut/core/cs_registers_i/mcause_o
 add wave -noupdate /tb_aes/tb/dut/core/cs_registers_i/mcause_q
 add wave -noupdate /tb_aes/tb/dut/core/cs_registers_i/mcause_rdata
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {127155 ps} 0}
+WaveRestoreCursors {{Cursor 1} {39131 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 248
 configure wave -valuecolwidth 103
@@ -45,4 +51,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {10231 ps} {283203 ps}
+WaveRestoreZoom {0 ps} {168180 ps}

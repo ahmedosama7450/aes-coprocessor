@@ -12,13 +12,6 @@ QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 Top level modules:
 	cv32e40x_csr
 
-} {} {}} D:/College/GP/aes-coprocessor/test/memory.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/test/memory.sv
-QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
--- Compiling module memory
-
-Top level modules:
-	memory
-
 } {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_mpu.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_mpu.sv
 QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 -- Compiling module cv32e40x_mpu
@@ -27,13 +20,12 @@ QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 Top level modules:
 	cv32e40x_mpu
 
-} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_div.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_div.sv
+} {} {}} D:/College/GP/aes-coprocessor/test/memory.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/test/memory.sv
 QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
--- Compiling module cv32e40x_div
--- Importing package cv32e40x_pkg
+-- Compiling module memory
 
 Top level modules:
-	cv32e40x_div
+	memory
 
 } {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_wpt.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_wpt.sv
 QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
@@ -44,6 +36,14 @@ QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 
 Top level modules:
 	cv32e40x_wpt
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_div.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_div.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_div
+-- Importing package cv32e40x_pkg
+
+Top level modules:
+	cv32e40x_div
 
 } {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_register_file.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_register_file.sv
 QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
@@ -540,6 +540,13 @@ QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 Top level modules:
 	cv32e40x_clock_gate
 
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alu_b_cpop.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alu_b_cpop.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_alu_b_cpop
+
+Top level modules:
+	cv32e40x_alu_b_cpop
+
 } {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_wb_stage.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_wb_stage.sv
 QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 -- Compiling module cv32e40x_wb_stage
@@ -550,12 +557,13 @@ QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 Top level modules:
 	cv32e40x_wb_stage
 
-} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alu_b_cpop.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_alu_b_cpop.sv
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_a_decoder.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_a_decoder.sv
 QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
--- Compiling module cv32e40x_alu_b_cpop
+-- Compiling module cv32e40x_a_decoder
+-- Importing package cv32e40x_pkg
 
 Top level modules:
-	cv32e40x_alu_b_cpop
+	cv32e40x_a_decoder
 
 } {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_int_controller.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_int_controller.sv
 QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
@@ -565,31 +573,6 @@ QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 
 Top level modules:
 	cv32e40x_int_controller
-
-} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_a_decoder.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_a_decoder.sv
-QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
--- Compiling module cv32e40x_a_decoder
--- Importing package cv32e40x_pkg
-
-Top level modules:
-	cv32e40x_a_decoder
-
-} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_sleep_unit.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_sleep_unit.sv
-QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
--- Compiling module cv32e40x_sleep_unit
--- Importing package cv32e40x_pkg
-** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_sleep_unit.sv(65): (vlog-13314) Defaulting port 'ctrl_fsm_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-
-Top level modules:
-	cv32e40x_sleep_unit
-
-} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_prefetcher.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_prefetcher.sv
-QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
--- Compiling module cv32e40x_prefetcher
--- Importing package cv32e40x_pkg
-
-Top level modules:
-	cv32e40x_prefetcher
 
 } {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_clic_int_controller.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_clic_int_controller.sv
 QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
@@ -601,6 +584,23 @@ QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 
 Top level modules:
 	cv32e40x_clic_int_controller
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_prefetcher.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_prefetcher.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_prefetcher
+-- Importing package cv32e40x_pkg
+
+Top level modules:
+	cv32e40x_prefetcher
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_sleep_unit.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_sleep_unit.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_sleep_unit
+-- Importing package cv32e40x_pkg
+** Warning: D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_sleep_unit.sv(65): (vlog-13314) Defaulting port 'ctrl_fsm_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	cv32e40x_sleep_unit
 
 } {} {}} D:/College/GP/aes-coprocessor/src/aes/sbox_inv.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/src/aes/sbox_inv.sv
 QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
@@ -647,19 +647,19 @@ Top level modules:
 	riscv_crypto_sm4_sbox
 	riscv_crypto_aes_sm4_sbox
 
-} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_ff_one.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_ff_one.sv
-QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
--- Compiling module cv32e40x_ff_one
-
-Top level modules:
-	cv32e40x_ff_one
-
 } {} {}} D:/College/GP/aes-coprocessor/src/aes/aes32esmi.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/src/aes/aes32esmi.sv
 QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 -- Compiling module aes32esmi
 
 Top level modules:
 	aes32esmi
+
+} {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_ff_one.sv {1 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_ff_one.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cv32e40x_ff_one
+
+Top level modules:
+	cv32e40x_ff_one
 
 } {} {}} D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_i_decoder.sv {2 {vlog -work work -vopt -sv -stats=none D:/College/GP/aes-coprocessor/cv32e40x-master/rtl/cv32e40x_i_decoder.sv
 QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
