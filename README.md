@@ -38,10 +38,10 @@ You can either run the `tb` or `tb_aes` testbenches.
 
 The `firmware_aes` contains a complete program that encrypts, then decrypts data using the AES instructions. The data and key are assumed to be as follows: `DATA=0x00000001000000020000000300000004`, `KEY=0x000102030405060708090a0b0c0d0e0f`
 
-**Result of encryptian:**
+**Result of encryption:**
 ![enc](https://github.com/ahmedosama7450/aes-coprocessor/assets/76496317/565fe1b4-218c-43ce-a829-91c32eb42fe2)
 
-**Result of decryptian:**
+**Result of decryption:**
 ![dec](https://github.com/ahmedosama7450/aes-coprocessor/assets/76496317/60efa5cd-86c8-4ee6-a8a9-29fa671fa66f)
 
 ## Coprocessor architecture
