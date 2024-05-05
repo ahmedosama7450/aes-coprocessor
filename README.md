@@ -5,19 +5,19 @@ The communication between the core and the coprocessor is based on the [extensio
 
 ## Contents
 ### `src` folder
-| Module Name | Description |
+| Content | Description |
 |---|---|
 | [aes_coprocessor.sv](https://github.com/ahmedosama7450/aes-coprocessor/blob/main/src/aes_coprocessor.sv) | The coprocessor module which implements the interfaces of the `cv-x-if`. |
 | [cv32e40x_core_with_aes.sv](https://github.com/ahmedosama7450/aes-coprocessor/blob/main/src/cv32e40x_core_with_aes.sv) | The new core which integrates the CV32E40X core with the AES coprocessor. |
 | [aes](https://github.com/ahmedosama7450/aes-coprocessor/tree/main/src/aes) | The implementations of the 32-bit AES instructions (`aes32esi`, `aes32esmi`, `aes32dsi`, `aes32dsmi`) |
 
 ### `test` folder
-| Module Name | Description |
+| Content | Description |
 |---|---|
 | [tb.sv](https://github.com/ahmedosama7450/aes-coprocessor/blob/main/test/tb.sv) | testbench of the core without AES |
 | [tb_aes.sv](https://github.com/ahmedosama7450/aes-coprocessor/blob/main/test/tb_aes.sv) | testbench of the core with AES |
 | [tb_wrapper.sv](https://github.com/ahmedosama7450/aes-coprocessor/blob/main/test/tb_wrapper.sv) | wrapper module, used by `tb` and `tb_aes` |
-| [memory.sv](https://github.com/ahmedosama7450/aes-coprocessor/blob/main/test/memory.sv) | memory module that follows the [OBI protocol](https://docs.openhwgroup.org/projects/cv32e40x-user-manual/en/latest/load_store_unit.html#protocol) |
+| [memory.sv](https://github.com/ahmedosama7450/aes-coprocessor/blob/main/test/memory.sv) | memory module that follows the [OBI protocol](https://docs.openhwgroup.org/projects/cv32e40x-user-manual/en/latest/load_store_unit.html#protocol). It has an instruction memory and a data memory to interface with the core|
 | [firmware_aes.mem](https://github.com/ahmedosama7450/aes-coprocessor/blob/main/test/firmware_aes.mem) | the program run by `tb_aes` testbench |
 | [firmware_aes.txt](https://github.com/ahmedosama7450/aes-coprocessor/blob/main/test/firmware_aes.txt) | same as `firmware_aes.mem` but includes the equivalent assembly instructions as comments, for clarification |
 | [firmware.mem](https://github.com/ahmedosama7450/aes-coprocessor/blob/main/test/firmware.mem) | the program run by `tb` testbench |
