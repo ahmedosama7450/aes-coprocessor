@@ -249,6 +249,8 @@ module aes_coprocessor #(
   );
 
   always_comb begin
+    result_data = '0;
+    
     if (is_aes32dsi_issued) begin
       result_data = aes32dsi_result_data;
     end else if (is_aes32dsmi_issued) begin
