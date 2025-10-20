@@ -46,6 +46,8 @@ The `firmware_aes` contains a complete program that encrypts, then decrypts data
 
 ## Coprocessor architecture
 
+![Alt text](./architecture.svg)
+
 The coprocessor is composed of two pipeline stages:
 ### Instruction offloading
 The instruction is offloaded to the coprocessor by [the issue interface](https://docs.openhwgroup.org/projects/openhw-group-core-v-xif/en/latest/x_ext.html#issue-interface). The instruction is decoded and the required information parts are extracted (`opcode`, `func3`, `func7`, `rd_id`, `bs`, `is_aes32`, `is_aes32dsi`, `is_aes32dsmi`, `is_aes32esi`, `is_aes32esmi`). Once the next pipeline stage (Instruction handling) is available, the issue handshake is performed. This tells the core that the coprocessor is ready to receive the next instruction.
@@ -63,4 +65,5 @@ In this stage, the coprocessor waits until the core sends [the commit interface]
 ![image](https://github.com/ahmedosama7450/aes-coprocessor/assets/76496317/31f57587-6a53-4505-ac0a-6db288f797f6)
 
 # License
+
 MIT
